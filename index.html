@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+    <div class="background">
+        <h1 id="title">Survey Form</h1>
+        <hr>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
+        <hr>
+        <form id="survey-form">
+        <fieldset>
+            <label for="name" id="name-label">Enter Your First Name: <input id="name" name="first-name" type="text" placeholder="name" required /></label>
+            <label for="email" id="email-label">Enter Your Email: <input id="email" name="email" type="email" placeholder="email" required /></label>
+            <label for="number" id="number-label">Enter Your Email: <input id="number" name="number" type="number" min="5" max="10" placeholder="number" required /></label>
+            <label for="dropdown ">Which option best describes your current role?
+            <select id="dropdown" name="dropdown">
+                <option value="">(select one)</option>
+                <option value="1">Student</option>
+                <option value="2">Teacher</option>
+            </select>
+            </label> 
+        </fieldset>
+        <fieldset>
+            <label for="recommend">
+            Would you recommend freeCodeCamp to a friend?</label>
+            <label for="recommend"></label><input id="recommend" type="radio" name="recommend" class="inline" value="Yes" /> Yes</label>
+            <label for="recommend"><input id="recommend" type="radio" name="recommend" value="No"class="inline" /> No</label>
+        </fieldset>
+        <fieldset>
+            <label for="referrer">What is your favorite feature of freeCodeCamp?
+            <select id="referrer" name="referrer">
+                <option value="">(select one)</option>
+                <option value="1">Tutorial</option>
+                <option value="2">Programming</option>
+                <option value="3">Forums</option>
+                <option value="4">Other</option>
+            </select>
+            </label>
+        </fieldset>
+        <fieldset>
+            <label>What would you like to see improved? (Check all that apply)</label>
+            <label>
+            <input id="terms-and-conditions" type="checkbox"  name="feature" class="inline" value="1"/>Programming
+            </label>
+            <label>
+            <input id="terms-and-conditions" type="checkbox"  name="feature" class="inline" value="2"/>Web Development
+            </label>
+            <label>
+            <input id="terms-and-conditions" type="checkbox"  name="feature" class="inline" value="3"/>Javascript
+            </label>
+            <label>
+                <input id="terms-and-conditions" type="checkbox"  name="feature" class="inline" value="3"/>Css
+            </label>
+            <label>
+                <input id="terms-and-conditions" type="checkbox"  name="feature" class="inline" value="3"/>Html
+            </label>
+        </fieldset>
+        <fieldset>
+            <label for="comments ">Any comments or suggestions?
+            <textarea id="comments " name="comments " rows="3" cols="30" placeholder="Enter comments or suggestions here..."></textarea>
+            </label>
+        </fieldset>
+        <input type="submit" value="Submit" id="submit"/>
+        </form>
+    </div>
+  </body>
+<html>
